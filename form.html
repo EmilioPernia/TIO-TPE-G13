@@ -7,6 +7,52 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="encabezado">
+      
+        <nav class="nav-hidden">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="ranking.html">RANKINGS</a></li>
+                <li><a href="estadisticas.html">ESTADISTICAS</a></li>
+                <li><a href="registrarse.html">REGISTRARSE</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="div-contenido-registrarse">
+        <div class="div-registrarse">
+            <form id="form">
+                <h3>Registrarse</h3>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" placeholder="Apellido" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Email" required>
+                
+                <div class="sexo">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" name="sexo" value="masculino" required>
+                    <label for="femenino">Femenino</label>
+                    <input type="radio" name="sexo" value="femenino" required>
+                    <label for="otro">Otro</label>
+                    <input type="radio" name="sexo" value="otro" required>
+                </div>
+                
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="Minimo 6 caracteres" minlength="6" required>
+               
+                <div class="div-captcha">
+                    <label class="textoSeguridad"></label>
+                    <p>Ingrese el texto de la imagen</p>
+                    <input id="input-usuario" type="text" name="status" placeholder="escribir..." autocomplete="off" required>
+                    <button id="btn-enviar">Enviar</button>
+                    <label class="respuesta">Captcha no completado</label>
+                </div>
+            </form>
+        </div>
+    </div>
+   
+    <script src="js/nav.js"></script>
+    <script src="js/captcha.js"></script>
 </body>
 </html>
