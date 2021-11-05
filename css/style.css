@@ -1,0 +1,160 @@
+body{
+    margin:0px;
+}
+.encabezado{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    color: whitesmoke;
+    background-color: black;
+    border-bottom: solid 3px gold;
+}
+
+header{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:flex-end;
+    background-image: url(../images/backgroundHeader.jpg);
+}
+
+header h1, header h2{
+    font-family:'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+
+}
+
+header h1{
+    font-size: 70px;
+    width: 190px;
+    background-color: rgba(160, 46, 46, 0.808);
+    animation: logo 1s;
+    animation-iteration-count: initial;
+}
+
+@keyframes logo{
+    0%{background-color: rgba(160, 46, 46, 0.808)}
+    50%{background-color: gold;}
+    100%{background-color: rgba(160, 46, 46, 0.808);}
+}
+header h2{
+    font-size: 20px;
+    width: 190px;
+    background-color: rgb(100, 14, 14);
+    border-bottom: solid 3px black;
+}
+
+#btn-scroll-menu{
+    height: 30px;
+    background-color: black;
+    margin: 3px;
+    border: solid 1px whitesmoke;
+    color: whitesmoke;
+}
+
+#btn-scroll-menu:hover{
+    background-color: rgb(59, 59, 59);
+    border-color: gold;
+}
+
+.nav-hidden{
+    display: none;
+    margin-right: 5px;
+    
+}
+
+.nav-scrolled{
+    display: flex;
+    margin-right: 5px;
+}
+
+.nav-scrolled li{
+    width: 150px;
+}
+
+.nav-scrolled li:hover{
+    background-color: gold;
+}
+
+.nav-scrolled a:hover{
+    color: black;
+    font-size: larger;
+}
+
+.encabezado ul{
+    padding-top: 5px;
+    border-top: solid 3px gold;
+    list-style: none;
+}
+
+.encabezado li{
+    border-bottom: solid 2px white;
+}
+
+.encabezado a{
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    padding: 0 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-variant: small-caps;
+    color: whitesmoke;
+    background-color: black;
+    border-top: solid 1px whitesmoke;
+}
+
+footer span{
+    padding: 0 2px;
+}
+
+@media only screen and (min-width:700px) {
+    
+    #btn-scroll-menu{
+        display: none;
+    }
+
+    .encabezado header{
+        justify-content: center;
+    }
+
+    .encabezado nav{
+        width: 100%;
+        margin: 0;
+        color: whitesmoke;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+    }
+
+    .encabezado ul{
+        display: flex;
+        flex-direction: row;
+        border: none;
+        padding: 0 0 0 10px;
+        margin: 2px 0;
+    }
+
+    .encabezado li{
+        padding: 0 10px;
+        margin: 1px;
+        border: none;
+    }
+
+    .encabezado li:hover{
+        background-color: gold;
+    }
+
+    .encabezado a:hover{
+        color: black;
+    }   
+}
