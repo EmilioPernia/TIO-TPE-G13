@@ -1,11 +1,12 @@
 .container{
     font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    background-color: black;
+    background-color: blue;
 }
 
 .container p{
-    font-size: 16px;
-    padding: 10px 5px;
+    font-size: 19px;
+    padding: 10px 5px 5px;
+    height: 10px;	
 }
 
 .container figure{
@@ -15,41 +16,44 @@
 .main div, .noticias-secundarias div{
     display: flex;
     flex-direction: column;
-    padding: 3px 0;
-    margin: 3px 0 0 0;
+    padding: 3px 0 2px;
+    margin: 3px 0 0 2px;
 }
 
 .container h2, .container h3{
-    padding-left: 5px;
+    padding-left: 15px;
 }
 
 .noticia-1, .noticia-2{
-    border-bottom: solid 3px whitesmoke;
+    border-bottom: solid 3px red
 }
 
 .noticia-1{
-    background-color: black;
-    color: whitesmoke;
+    background-color: orange;
+    color: cyan;
 }
 .noticia-2{
-    background-color: gold;
+    background-color: purple;
     color: black;
+    text-align: center;
 }
 
 .titulo-seccion-noticias{
     text-align: center;
-    width: 100%;
-    background-color: rgb(100, 14, 14);;
+    width: 90%;
+    height: 10px;
+    background-color: rgb(100, 14, 14);
+    //background-color: rgb(100, 104, 24);
     padding: 3px 0px;
-    border-bottom: solid 2px gold;
-    margin: 0;
-    color: floralwhite;
+    border-bottom: solid 2px cyan;
+    margin: 1px;
+    color: pink;
 }
 
 .noticias-secundarias div{
     background-color: whitesmoke;
-    border-top: solid 2px black;
-    border-bottom: solid 2px black;
+    border-top: solid 20px red;
+    border-bottom: solid 21px blue;
 }
 
 .noticias-secundarias p{
@@ -57,31 +61,35 @@
     justify-content: center;
 }
 
+// prueba
+
 #subir-a-inicio{
     border: solid 2px black;
     margin: 1px;
     width: 30px;
 }
 
+
+// responsive
 @media only screen and (min-width:700px) {
 
 .main {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        border-bottom: double 10px whitesmoke;
+        border-bottom: double 15px whitesmoke;
     }
     .noticia-1, .noticia-2{
-        border-bottom: 0;
+        border-bottom: 2px;
     }
     .noticia-1{
-        width: 55%;
-        border-right: solid 5px whitesmoke;
+        width: 50%;
+        border-right: solid 5px blue;
     }
  
     .noticia-2{
-        width: 40%;
-        border-left: solid 5px whitesmoke;
+        width: 41%;
+        border-left: solid 5px cyan;
     }
  
 
@@ -93,11 +101,12 @@
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-evenly;
-        border-top: solid 3.5px black;
+        border-top: solid 3.5px cyan;
     }
  
     .noticias-secundarias div{
-        width: 24%;
+        width: 20%;
+	height: 10px;
         background-color:black;
         margin-top: 0;
         border-top: 0;
@@ -118,8 +127,9 @@
  
     .noticias-secundarias p{
         color: whitesmoke;
+        font-size: 1.2em;
         border-top: solid 2px whitesmoke;
-        min-height: 60px;
+        min-height: 58px;
         overflow: hidden;
     }
  
