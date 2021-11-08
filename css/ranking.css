@@ -17,9 +17,9 @@
 }
 
 .lista-ranking p{
-    color: whitesmoke;
+    color: red;
     font-size: 35px;
-    border-bottom: solid 3px whitesmoke;
+    border-bottom: solid 3px red;
 }
 
 .top10estilo {
