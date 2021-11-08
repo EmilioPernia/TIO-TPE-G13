@@ -1,0 +1,58 @@
+.lista-ranking{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.lista-ranking ol{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    padding-inline-start: 0px;
+    color: whitesmoke;
+    margin: 0px;
+    padding-left:10px ;
+}
+
+.lista-ranking p{
+    color: whitesmoke;
+    font-size: 35px;
+    border-bottom: solid 3px whitesmoke;
+}
+
+.top10estilo {
+    color: rgba(201, 44, 44, 0.733);
+    font-weight: bolder;
+}
+
+.lista-ranking ol :first-child{
+    font-size: 35px;
+}
+
+.lista-ranking li {
+    margin: 10px;
+}
+
+
+@media only screen and (min-width:700px) {
+    .lista-ranking{
+        background-image: url(../images/backgroundRanking.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .lista-ranking ol, .lista-ranking p{
+        background-color: black;
+        padding: 10px 35px;
+        margin: 0;
+        border-left: solid 3px gold;
+        border-right: solid 3px gold;
+        width: 290px;
+    }
+
+    .lista-ranking p{
+        display: flex;
+    }
+}
