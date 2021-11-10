@@ -1,12 +1,11 @@
 .container {
-    font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
-    background-color: blue;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    background-color: black;
 }
 
 .container p {
-    font-size: 1.1875rem;
-    padding: 0.625rem 0.3125rem 0.3125rem;
-    height: 0.625rem;
+    font-size: 1rem;
+    padding: 0.625rem 0.3125rem;
 }
 
 .container figure {
@@ -17,47 +16,45 @@
 .noticias-secundarias div {
     display: flex;
     flex-direction: column;
-    padding: 0.1875rem 0 0.125rem;
-    margin: 0.1875rem 0 0 0.125rem;
+    padding: 0.1875rem 0;
+    margin: 0.1875rem 0 0 0;
 }
 
 .container h2,
 .container h3 {
-    padding-left: 0.9375rem;
+    padding-left: 0.3125rem;
 }
 
 .noticia-1,
 .noticia-2 {
-    border-bottom: solid 3px red;
+    border-bottom: solid 3px whitesmoke;
 }
 
 .noticia-1 {
-    background-color: orange;
-    color: cyan;
+    background-color: black;
+    color: whitesmoke;
 }
 
 .noticia-2 {
-    background-color: purple;
+    background-color: gold;
     color: black;
-    text-align: center;
 }
 
 .titulo-seccion-noticias {
     text-align: center;
-    width: 90%;
-    height: 0.625rem;
+    width: 100%;
     background-color: rgb(100, 14, 14);
-    //background-color: rgb(100, 104, 24);
+    ;
     padding: 0.1875rem 0px;
-    border-bottom: solid 0.125rem cyan;
-    margin: 0.0625rem;
-    color: pink;
+    border-bottom: solid 0.125rem gold;
+    margin: 0;
+    color: floralwhite;
 }
 
 .noticias-secundarias div {
     background-color: whitesmoke;
-    border-top: solid 1.25rem red;
-    border-bottom: solid 1.3125rem blue;
+    border-top: solid 0.125rem black;
+    border-bottom: solid 0.125rem black;
 }
 
 .noticias-secundarias p {
@@ -65,32 +62,30 @@
     justify-content: center;
 }
 
-// prueba
 #subir-a-inicio {
     border: solid 0.125rem black;
     margin: 0.0625rem;
     width: 1.875rem;
 }
 
-// responsive
-@media only screen and (min-width: 43.75rem) {
+@media only screen and (min-width:43.75rem) {
     .main {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        border-bottom: double 15px whitesmoke;
+        border-bottom: double 0.625rem whitesmoke;
     }
     .noticia-1,
     .noticia-2 {
-        border-bottom: 2px;
+        border-bottom: 0;
     }
     .noticia-1 {
-        width: 50%;
-        border-right: solid 0.3125rem blue;
+        width: 55%;
+        border-right: solid 5px whitesmoke;
     }
     .noticia-2 {
-        width: 41%;
-        border-left: solid 0.3125rem cyan;
+        width: 40%;
+        border-left: solid 5px whitesmoke;
     }
     .main figure {
         display: contents;
@@ -99,19 +94,18 @@
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-evenly;
-        border-top: solid 0.2188rem cyan;
+        border-top: solid 0.2188rem black;
     }
     .noticias-secundarias div {
-        width: 20%;
-        height: 0.625rem;
+        width: 24%;
         background-color: black;
         margin-top: 0;
         border-top: 0;
         padding-top: 0;
     }
     .noticias-secundarias h3 {
-        height: 3.75rem;
-        border-bottom: solid 5px gold;
+        height: 60px;
+        border-bottom: solid 0.3125rem gold;
         background-color: whitesmoke;
         margin: 0;
         padding: 1.25rem;
@@ -122,9 +116,8 @@
     }
     .noticias-secundarias p {
         color: whitesmoke;
-        font-size: 1.2em;
         border-top: solid 0.125rem whitesmoke;
-        min-height: 3.625rem;
+        min-height: 60px;
         overflow: hidden;
     }
     .noticias-secundarias figure {
