@@ -1,0 +1,119 @@
+.tabla-estadisticas {
+    width:100%;
+    border: solid 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nacionalidad{
+    display: flex;
+}
+
+thead tr th{
+    display: none;
+}
+
+.tr-tabla{
+    background-color: whitesmoke;
+}
+
+tr td:first-child {
+    background: black;
+    color: whitesmoke;
+    font-size:20px;
+}
+
+tbody td {
+    display: block;
+    text-align:center;
+}
+
+.tr-hidden{
+    display: none;
+}
+
+.formUsuario{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    margin-left: 2px;
+}
+
+.formUsuario label{
+    background-color: gold;
+    border: solid 1px;
+}
+
+.formUsuario h2{
+    background-color: black;
+    color: whitesmoke;
+    margin: 10px 0 3px 0 ;
+    border: solid 5px;
+    text-align: center;
+}
+
+@media only screen and (min-width:700px) {
+    .tabla-estadisticas{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(../images/backgroundHeader.jpg);
+    }
+
+    .tabla-estadisticas th, .tabla-estadisticas td{
+        width: 120px;
+        height: 50px;
+        padding: 3px;
+    }
+
+    thead tr th, thead tr{
+        display: flex;
+    }
+
+    thead, tbody{
+       display: flex;
+       flex-direction: column;
+       width: max-content;
+    }
+
+    tbody tr{
+        display: flex;   
+    }
+
+    .tr-tabla{
+        border-spacing: initial;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+ 
+    thead th, tbody td:first-child {
+        background-color: black;
+        color: whitesmoke;
+        font-size: 18px;
+    }
+    
+    tbody td{
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .formUsuario{
+        padding: 3px 100px;
+        border: solid 5px;
+        margin-left: 0;
+    }
+
+    .formUsuario h2{
+        border: solid 5px black;
+        margin-bottom: 0;
+    }
+
+    
+    
+    #selectNationality{
+        max-height: 20px;
+        max-width: 20px;
+    }
+    
+}

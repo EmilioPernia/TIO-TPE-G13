@@ -1,0 +1,75 @@
+.div-contenido-registrarse {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/backgroundRegistrarse.jpg);
+    background-size: contain;
+}
+
+.div-registrarse {
+    margin-top: 40px;
+    border: solid black 2px;
+    background-color: rgba(160, 46, 46, 0.808);
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.div-registrarse h3 {
+    background-color: rgba(201, 58, 58, 0.808);
+    margin: 0px;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+}
+
+.sexo {
+    margin: 24px 10px 0px 0px;
+}
+
+form, .div-captcha, .div-registrarse, .noticia-principal {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-captcha {
+    align-items: center;
+}
+
+
+
+form label{
+    margin: 20px 0px 8px 0px;
+    padding-left: 2px;
+    color: white;
+
+}
+
+.div-captcha .textoSeguridad{
+    font-size: 30px;
+    text-align: center;
+    text-decoration: line-through;
+    width: 100%;
+    margin: 10px 20px;
+    padding: 3px 0px;
+    border-top: solid 2px grey;
+    border-bottom: solid 2px grey;
+    background-color: black;
+}
+
+.div-captcha p{
+    font-size: 15px;
+    font-style: oblique;
+    color: white;
+    margin: 0px;
+}
+
+#input-usuario{
+    margin: 10px;
+}
+
+@media only screen and (min-width:700px) {
+    .div-contenido-registrarse {
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center;
+    }
+}

@@ -1,4 +1,4 @@
-.lista-ranking{
+.lista-ranking {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,20 +6,27 @@
     background-color: black;
 }
 
-.lista-ranking ol{
+.lista-ranking ol {
     display: flex;
     flex-direction: column;
-    font-size: 25px;
+    font-size: 1.5625rem;
     padding-inline-start: 0px;
     color: whitesmoke;
     margin: 0px;
-    padding-left:10px ;
+    padding-left: 0.625rem;
 }
 
+<<<<<<< HEAD
 .lista-ranking p{
     color: red;
     font-size: 35px;
     border-bottom: solid 3px red;
+=======
+.lista-ranking p {
+    color: whitesmoke;
+    font-size: 2.1875rem;
+    border-bottom: solid 3px whitesmoke;
+>>>>>>> 936451bcc9bf77b768ad3602b5de20d06efdb885
 }
 
 .top10estilo {
@@ -27,32 +34,31 @@
     font-weight: bolder;
 }
 
-.lista-ranking ol :first-child{
-    font-size: 35px;
+.lista-ranking ol :first-child {
+    font-size: 2.1875rem;
 }
 
 .lista-ranking li {
-    margin: 10px;
+    margin: 0.625rem;
 }
 
-
 @media only screen and (min-width:700px) {
-    .lista-ranking{
+    .lista-ranking {
         background-image: url(../images/backgroundRanking.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
-    .lista-ranking ol, .lista-ranking p{
+    .lista-ranking ol,
+    .lista-ranking p {
         background-color: black;
-        padding: 10px 35px;
+        padding: 0.625rem 2.1875rem;
         margin: 0;
-        border-left: solid 3px gold;
-        border-right: solid 3px gold;
-        width: 290px;
+        border-left: solid 0.1875rem gold;
+        border-right: solid 0.1875rem gold;
+        width: 18.125rem;
     }
-
-    .lista-ranking p{
+    .lista-ranking p {
         display: flex;
     }
 }
